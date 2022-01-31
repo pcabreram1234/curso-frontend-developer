@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      p {
+        color: salmon;
+        font-size: 20px;
+      }
+      p:hover {
+        color: skyblue;
+      }
+
+      p::first-letter {
+        color: teal;
+      }
+
+      p::before {
+        content: "✨";
+      }
+
+      p::after {
+        content: "🌭 🤪";
+      }
+
+      div p:nth-child(2) {
+        color: violet;
+      }
+
+      ::placeholder {
+        padding: 10px;
+        border-radius: 40px;
+        color: turquoise;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hola</p>
+    <div>
+      <p>Platzi</p>
+      <p>Master</p>
+      <p>Lo Mejor</p>
+      <input type="text" placeholder="Introduce tu texto" />
+    </div>
+  </body>
+</html>
